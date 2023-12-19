@@ -1,0 +1,283 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-auth-input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.auth-link{
+    color: rgba(155, 49, 49, 1);
+}
+
+
+/* //IMPORTANT: espace admininstrateur */
+/* //NOTE edit-pizza */
+
+.sub-title-edit-pizza{
+    color: rgba(155, 49, 49, 1);
+    font-family: 'khula-regular', sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.sub-title-pizza-name{
+    color: rgba(253, 253, 253, 1);
+    
+}
+
+.main-edit-pizza{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.edit-pizza-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+.admin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-admin{
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gestion-command-admin{
+    color: rgba(253, 253, 253, 1);
+    font-family: 'khula-regular', sans-serif;
+}
+
+.box-admin-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.box-admin-link{
+    margin: 0 10px;
+}
+
+
+.table-user{
+    width: 80%;
+    margin-top: 30px;
+}
+
+.button-delete{
+    background-color: rgba(155, 49, 49, 1);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-delete:hover{
+    background-color: rgba(255, 71, 78, 1);
+    color:rgba(255, 255, 255, 1)
+}
+
+.button-edit{
+    background-color: rgb(201, 201, 201);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-edit:hover{
+    background-color: rgb(170, 170, 170);
+    color:rgba(255, 255, 255, 1)
+}
+
+/* //IMPORTANT: espace compte utilisateur */
+.account-main{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+
+.sub-title-account{
+    font-size: 55px;
+
+}
+
+.box-infos{
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-parametres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title-account{
+    color: rgba(255, 255, 255, 1);
+}
+
+.donnees{
+    color: rgba(155, 49, 49, 1);
+}
+
+
+.btn-edit-infos{
+    cursor: pointer;
+}
+.btn-edit-infos:hover{
+    color: rgba(255, 71, 78, 1);
+}
+
+/* //UP UTILISATEUR: panier */
+/* //UP UTILISATEUR: liste des pizzas créées */
+
+.main-panier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title-panier{
+    font-size: 40px;
+    background-color: rgba(255, 71, 78, 1);
+    color: rgba(255, 255, 255, 1);
+    margin: 30px;
+    padding: 10px;
+    /* font-family: 'khula-regular', sans-serif; */
+}
+
+.warning-ingredient{
+    color: rgb(235, 29, 29);
+    font-family: 'khula' sans-serif;
+}
+
+/* //UP: UTILISATEUR: MODIFICATION DONNEES PERSONELLES */
+/* class titre: main-panier */
+.account-edit{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.edit-new{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.papapizza_arrow{
+    height: 400px;
+    width: 400px;
+}
+
+.edit-old{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.edit-donnees{
+    font-family: 50px;
+    font-family: 'khula-regular', sans-serif;
+    color: rgba(255, 71, 78, 1);
+    align-items: center;
+}
+
+
+
+
+
+
+/* //FIX */
+.button-pizza{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.admin-box-add{
+    margin: 25px 0;
+}
+
+.admin-img-pizza{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.list-ingredient{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-ingredient-input{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.list-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  */
+.image-pizza{
+    /* metttre la meme taille pour chaque pizza: */
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .auth-form {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .auth-form {
+        width: 40%;
+    }
+
+}
