@@ -1,3 +1,4 @@
+<div class="return-arrow-div"><a href="/account/<?php echo $user->id ?>"><i class="return-arrow bi bi-arrow-left-square-fill"></i></a></div>
 <div class="admin-container">
     <h1 class="title">Les clients</h1>
 

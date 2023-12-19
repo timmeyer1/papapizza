@@ -1,4 +1,5 @@
 <?php use Core\Session\Session; ?>
+<div class="return-arrow-div"><a href="/admin/home"><i class="return-arrow bi bi-arrow-left-square-fill"></i></a></div>
 <div class="admin-container">
     <h1 class="title">L'équipe</h1>
     <!-- Boutton pour ajouter un nouveau membre -->

@@ -89,7 +89,7 @@ class App implements DatabaseConfigInterface
         $this->router->get('/account/basket/add', [UserController::class, 'basketAdd']);
         // route pour ACCEDER au PANIER de l'UTILISATEUR
         
-        $this->router->get('/account/basket', [UserController::class, 'basket']);
+        $this->router->get('/account/basket/{id}', [UserController::class, 'basket']);
         $this->router->post('/account/basket/form', [UserController::class, 'basketForm']);
     
 

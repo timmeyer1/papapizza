@@ -44,19 +44,6 @@ class UserController extends Controller
         $view->render($view_data);
     }
 
-    public function basketForm(ServerRequest $request)
-    {
-
-        $data_form = $request->getParsedBody();
-        $form_result = new FormResult();
-
-        $data_basket = [
-            'user_id' => Session::get('USER')->id,
-            'pizza_id' => $data_form['pizza_id'],
-            
-        ]
-    }
-
 
     // PING: page d'affichage des créations des pizzas
     public function yourPizzas(int $id)

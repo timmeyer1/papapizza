@@ -439,6 +439,7 @@ body {
 .return-arrow {
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
+    /* border: 1px solid rgba(155, 49, 49, 1); */
 }
 .return-arrow:hover{
     color: rgba(156, 48, 48, 1);

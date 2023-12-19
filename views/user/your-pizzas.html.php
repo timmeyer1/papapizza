@@ -1,3 +1,4 @@
+<div class="return-arrow-div"><a href="/account/<?php echo $user->id ?>"><i class="return-arrow bi bi-arrow-left-square-fill"></i></a></div>
 <div class="main-panier">
     <h1 class="title">Vos création(s):</h1>
     <a class="call-action" href="/pizza/create/<?= $user->id ?>">+ Nouvelle pizza</a>

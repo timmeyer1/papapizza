@@ -1,6 +1,6 @@
 <?php use Core\Session\Session;
 ?>
-
+<div class="return-arrow-div"><a href="/pizzas"><i class="return-arrow bi bi-arrow-left-square-fill"></i></a></div>
 <h1 class="title title-detail"><?= $pizza->name ?></h1>
 <div class="container-pizza-detail">
     <div class="box-image-detail">
@@ -42,11 +42,11 @@
                         <td class="footer-description"><?= $price->size->label ?></td>
                         <td class="footer-description"><?= number_format($price->price, 2, ',', ' ') ?>€</td>
                         <td class="footer-description">
-                            <form method="post" action="/add-pizza-panier">
-                                <input type="hidden" name="user_id" value="<?= Session::get(Session::USER)->id  ?>">
+                            <form method="post" action="/account/basket/form">
+                                <!-- <input type="hidden" name="user_id" value="<?= Session::get(Session::USER)->id  ?>"> -->
                                 <input type="hidden" name="price" value="<?= $price->price  ?>">
                                 <input type="hidden" name="pizza_id" value="<?= $pizza->id ?>">
-                                <input type="number" name="quantity" value=1 min=1 max=10>
+                                <input type="number" name="quantity" value=1 min=1 max=5>
                                 <button class="call-action" type="submit"><i class="bi bi-plus-circle"></i></button>
                             </form>
                         </td>

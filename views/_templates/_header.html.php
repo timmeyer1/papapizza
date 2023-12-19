@@ -86,10 +86,11 @@
                                         </a>
 
                                     <?php else : ?>
-
+                                        <?php if ($auth::isAuth()) : ?>
                                         <a href="/account/basket/">
                                             <img class="custom-svg" src="/assets/images/icon/cart.svg" alt="icone panier">
                                         </a>
+                                        <?php endif ?>
 
                                     <?php endif ?>
                                 </li>

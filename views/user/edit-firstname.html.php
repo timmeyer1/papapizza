@@ -1,3 +1,4 @@
+<div class="return-arrow-div"><a href="/account/<?php echo $user->id ?>"><i class="return-arrow bi bi-arrow-left-square-fill"></i></a></div>
 <h1 class="title main-panier">Modifier votre prénom</h1>
 <div class="account-edit">
     <div class="edit-old">

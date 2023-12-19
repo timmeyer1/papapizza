@@ -1,4 +1,5 @@
 <?php
+
 use Core\Session\Session;
 ?>
 <h1 class="title title-page">Notre carte</h1>
@@ -23,5 +24,9 @@ use Core\Session\Session;
 <div class="d-flex flex-column justify-content-center align-items-center">
     <h2 class="sub-title-account">Pas convaincu ?</h2>
     <h2 class="sub-title-account">Faites votre propre pizza !</h2>
-    <h3 class="sub-title">Disponible dans votre compte</h3>
+    <?php if ($auth::isAuth()) : ?>
+        <a class="call-action" href="/pizza/create/<?= $user->id ?>">+ Nouvelle pizza</a>
+    <?php else : ?>
+        <a class="call-action" href="/connexion">Connectez-vous</a>
+    <?php endif ?>
 </div>
